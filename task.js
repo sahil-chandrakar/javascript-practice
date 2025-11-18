@@ -28,7 +28,7 @@ const evenNumber = (arr) => {
   let result = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 == 0) {
-      result.push(arr[i])
+      result.push(arr[i]);
     }
   }
   return result;
@@ -41,6 +41,7 @@ const stringReverse = (str) => {
   for (let i = str.length - 1; i >= 0; i--) {
     rev += str[i];
   }
+
   return rev;
 };
 let result = stringReverse("sahil");
@@ -49,22 +50,23 @@ let result = stringReverse("sahil");
 //vowel counter - a e i o u
 const vowelCalculator = (str) => {
   let count = 0;
-  for (let i = 0; i < str.length; i++) {
+  let newStr = str.split("");
+  newStr.forEach((val) => {
     if (
-      str[i] == "a" ||
-      str[i] == "e" ||
-      str[i] == "o" ||
-      str[i] == "u" ||
-      str[i] == "i" ||
-      str[i] == "A" ||
-      str[i] == "E" ||
-      str[i] == "O" ||
-      str[i] == "U" ||
-      str[i] == "I"
+      val == "a" ||
+      val == "e" ||
+      val == "o" ||
+      val == "u" ||
+      val == "i" ||
+      val == "A" ||
+      val == "E" ||
+      val == "O" ||
+      val == "U" ||
+      val == "I"
     ) {
       count = count + 1;
     }
-  }
+  });
   return count;
 };
 console.log(vowelCalculator("SAHILa"));
@@ -72,15 +74,15 @@ console.log(vowelCalculator("SAHILa"));
 //grade calculator
 const gradeCalculator = (grade) => {
   if ((grade <= 100) & (grade >= 85)) {
-    console.log("Grade A");
+    return "Grade A";
   } else if ((grade <= 84) & (grade >= 65)) {
-    console.log("Grade B");
+    return "Grade B";
   } else if ((grade <= 64) & (grade >= 45)) {
-    console.log("Grade C");
+    return "Grade C";
   } else if ((grade <= 44) & (grade >= 31)) {
-    console.log("Grade D");
+    return "Grade D";
   } else {
-    console.log("You are failed");
+    return "You are failed";
   }
 };
-// gradeCalculator(20);
+console.log(gradeCalculator(100));
