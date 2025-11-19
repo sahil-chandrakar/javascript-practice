@@ -33,14 +33,14 @@ main {
 
 .first .box {
   /* height: 20vh; */
-  width: 35vw;
+  /* width: 35vw; */
   display: flex;
   /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   gap: 20px;
   border-radius: 12px;
-  padding: 20px;
+  padding: 10px 0;
 }
 .section input,
 .first .box input,
