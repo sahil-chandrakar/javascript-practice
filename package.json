@@ -1,0 +1,27 @@
+{
+  "name": "js-basics-practice",
+  "version": "1.0.0",
+  "description": "This repository is for practicing and experimenting with JavaScript, including tasks, scripts, and styles. It is structured for easy learning and testing of JavaScript concepts.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahil-chandrakar/javascript-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sahil-chandrakar/javascript-practice/issues"
+  },
+  "homepage": "https://github.com/sahil-chandrakar/javascript-practice#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "typescript": "^5.9.3"
+  }
+}
